@@ -1,0 +1,176 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: 100dvh;
+}
+.login {
+  width: 40%;
+  background-color: #002062;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  display: flex;
+  justify-self: center;
+}
+img {
+  margin-top: 20px;
+}
+.heading {
+  color: white;
+  font-size: x-large;
+}
+
+.email {
+  border: none;
+  background-color: #0f2d6b;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+}
+.email input:focus {
+  outline: none;
+  border: none;
+}
+.email input {
+  background-color: #0f2d6b;
+  color: white;
+  border: none;
+  padding: 10px;
+  gap: 5px;
+}
+.forget {
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: smaller;
+  cursor: pointer;
+}
+.signin {
+  background-color: rgb(9, 9, 199);
+  color: white;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.signin:hover {
+  background-color: rgb(24, 24, 151);
+}
+.social fieldset {
+  width: 280px;
+  margin-top: 10px;
+  color: rgb(249, 248, 248);
+  border-color: rgb(197, 194, 194);
+  text-align: center;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.google {
+  align-items: center;
+  text-align: center;
+  background-color: #0f2d6b;
+  border-radius: 5px;
+  border: none;
+  color: #0f2d6b;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: #0f2d6b;
+  border: none;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn img {
+  margin-bottom: 18px;
+  position: relative;
+  right: 10px;
+}
+.social .btn {
+  margin-bottom: 5px;
+}
+.create {
+  color: white;
+  font-size: small;
+}
+.create a {
+  color: rgb(36, 36, 216);
+}
+.image {
+  width: 60%;
+}
+.image img {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: center;
+}
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 50%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .login {
+    width: 50%;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .heading {
+    font-size: medium;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .heading {
+    font-size: large;
+  }
+  .btn {
+    height: 30px;
+  }
+}
